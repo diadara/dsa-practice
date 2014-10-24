@@ -8,3 +8,6 @@ OBJECTS = driver.o array.o sort.o
 
 run: $(OBJECTS)
 	$(CC) $(CFLAGS) $(DEFS) -o $@ $^ -lc $(LDFLAGS) 
+
+clean:
+	rm -rf *.o run
